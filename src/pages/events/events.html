@@ -1,17 +1,29 @@
-<ion-searchbar id="searchbar" (ionInput)="getItems($event)"></ion-searchbar>
-<div id="results" *ngIf="searching">Search Results</div>
-<img src="assets/img/logo2.jpg" />
-<div *ngIf="searching && noResults">No Results Found</div>
+<ion-header>
+    <ion-navbar>
+        <ion-buttons end>
+            <button ion-button icon-only menuToggle>
+				<ion-icon name="menu"></ion-icon>
+			</button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
 
-<ion-row responsive-sm wrap>
-    <ion-col width-50 class="flex-card" *ngFor="let e of searchedEvents; let i=index">
-        <ion-card *ngIf="e.visibility==0" class="flex-card">
-            <ion-card-content>
-                <ion-list-header (click)="!showDetails[i] ? showDetails[i]=true : showDetails[i]=false">
-                    <h2>{{e.title}}</h2>
-                    <ion-icon *ngIf="!showDetails[i]" primary item-right name="ios-add-circle-outline"></ion-icon>
-                    <ion-icon *ngIf="showDetails[i]" primary item-right name="ios-remove-circle-outline"></ion-icon>
-                </ion-list-header>
+<ion-content padding-left padding-right padding-top>
+
+    <ion-searchbar id="searchbar" (ionInput)="getItems($event)"></ion-searchbar>
+    <div id="results" *ngIf="searching">Search Results</div>
+    <img src="assets/img/logo2.jpg" />
+    <div *ngIf="searching && noResults">No Results Found</div>
+
+    <ion-row responsive-sm wrap>
+        <ion-col width-50 class="flex-card" *ngFor="let e of searchedEvents; let i=index">
+            <ion-card *ngIf="e.visibility==0" class="flex-card">
+                <ion-card-content>
+                    <ion-list-header (click)="!showDetails[i] ? showDetails[i]=true : showDetails[i]=false">
+                        <h2>{{e.title}}</h2>
+                        <ion-icon *ngIf="!showDetails[i]" primary item-right name="ios-add-circle-outline"></ion-icon>
+                        <ion-icon *ngIf="showDetails[i]" primary item-right name="ios-remove-circle-outline"></ion-icon>
+                    </ion-list-header>
                     <ion-list no-lines>
                         <!--button ion-item (click)="!showDetails[i] ? showDetails[i]=true : showDetails[i]=false">
                         <h2>{{e.title}}</h2>
@@ -44,8 +56,8 @@
                     </span>
 
                     </ion-list>
-            </ion-card-content>
-            <!--button padding ion-button class="readmore">Read more</button>
+                </ion-card-content>
+                <!--button padding ion-button class="readmore">Read more</button>
             <ion-row no-padding>
               <ion-col>
                 <button icon-only ion-button clear small color="danger" icon-left>
@@ -63,7 +75,8 @@
           <ion-icon name='share-alt'></ion-icon>
           Share
         </button-->
-        </ion-card>
-    </ion-col>
-    <button ion-button item-right small color="primary" (click)="showMoreEvents()" >Show more events</button>
-</ion-row>
+            </ion-card>
+        </ion-col>
+        <button ion-button item-right small color="primary" (click)="showMoreEvents()">Show more events</button>
+    </ion-row>
+</ion-content>

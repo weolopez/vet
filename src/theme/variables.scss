@@ -13,18 +13,6 @@
 $text-color:        #000;
 $background-color:  #fff;
 
-$font-family-base: AJensonPro, "Trebuchet MS", Arial, Helvetica, sans-serif;
-$font-family-md-base: AJensonPro, "Trebuchet MS", Arial, Helvetica, sans-serif;
-$font-family-ios-base: AJensonPro, "Trebuchet MS", Arial, Helvetica, sans-serif;
-$font-family-wp-base: AJensonPro, "Trebuchet MS", Arial, Helvetica, sans-serif;
-
-/**
-$font-family-base: Arial, sans-serif;
-$font-family-md-base: Arial, sans-serif;
-$font-family-ios-base: Arial, sans-serif;
-$font-family-wp-base: Arial, sans-serif;
-*/
-
 // Named Color Variables
 // --------------------------------------------------
 // Named colors makes it easy to reuse colors on various components.
@@ -32,16 +20,13 @@ $font-family-wp-base: Arial, sans-serif;
 // to match your app's branding. Ionic uses a Sass map of
 // colors so you can add, rename and remove colors as needed.
 // The "primary" color is the only required color in the map.
-$sa-primary: #FF173D;
-$sa-secondary: #bd5e6e;
-$sa-dark: #2c2c2c;
 
 $colors: (
-  primary:    $sa-primary,
-  secondary:  $sa-secondary,
+  primary:    #003971,
+  secondary:  #c60023,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       $sa-dark,
+  dark:       #000,
   favorite:   #69BB7B
 );
 

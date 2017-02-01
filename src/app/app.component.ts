@@ -6,6 +6,7 @@ import { StatusBar } from 'ionic-native';
 import { Storage } from '@ionic/storage';
 import { UserServices } from '../lib/service/user';
 import { HomePage } from '../pages/home/home';
+import { EventPage  } from '../pages/events/events';
 import { LoginPage } from '../pages/login/login';
 import { RegisterLoginPage } from '../pages/register-login/register-login';
 import { RegisterIndividualProfilePage } from '../pages/register-individual-profile/register-individual-profile';
@@ -45,7 +46,8 @@ export class MyApp {
       { title: 'Profile Registration', component: RegisterIndividualProfilePage },
       { title: 'Change Password', component: ChangePasswordPage },
       { title: 'About', component: AboutPage },
-      { title: 'Contact Us', component: ContactPage }
+      { title: 'Contact Us', component: ContactPage },
+      { title: 'Events', component: EventPage }
 
     ];
   }

@@ -93,6 +93,7 @@ export function translateFactory(http: Http) {
     UseridPopover,
     PasswordPopover,
     HomePage,
+    EventPage,
     DonatePage,
     ForgotPage,
     LoginPage,

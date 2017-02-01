@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {NavController, Nav, NavParams} from 'ionic-angular';
 import { VolunteerEvent } from '../../lib/model/volunteer-event';
 import { VolunteerEventsService } from '../../lib/service/volunteer-events-service';
 import { EventImage } from '../../lib/model/eventImage';
@@ -7,8 +8,7 @@ import { EventDetailModal } from './eventdetail-modal';
 import { ModalController, ViewController } from 'ionic-angular';
 
 @Component({
-  templateUrl: 'events.html',
-  selector: 'events'
+  templateUrl: 'events.html'
 })
 
 export class EventPage {
@@ -30,10 +30,13 @@ export class EventPage {
   public moreInterval = 30;
   public moreIntervalIncrease = 30;
 
-  constructor(public volunteerEventsService: VolunteerEventsService,
-    public userServices: UserServices,
-    public modalCtrl: ModalController,
-    public viewCtrl: ViewController) {
+  constructor(public navCtrl: NavController,
+              public nav: Nav, 
+              public params: NavParams, 
+              public volunteerEventsService: VolunteerEventsService,
+              public userServices: UserServices,
+              public modalCtrl: ModalController,
+              public viewCtrl: ViewController) {
   }
 
   ngOnInit() {

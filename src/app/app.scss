@@ -20,41 +20,19 @@
 	font-family: Arial, sans-serif !important;
 }
 */
-@font-face {
-  font-family: "TrajanPro";
-  src: url("../assets/fonts/TrajanPro-Regular.otf") format("truetype");
-}
-
-@font-face {
-  font-family: "AJensonPro";
-  src: local("AJensonPro-Bold"), local("AJensonPro Bold"), url("../assets/fonts/AJensonPro-Bold.otf") format("truetype"); 
-}
-
-@font-face {
-  font-family: "AJensonPro";
-  src: local("AJensonPro-Regular"), local("AJensonPro Regular"), url("../assets/fonts/AJensonPro-Regular.otf") format("truetype"); 
-}
-
-@font-face {
-  font-family: "AJensonPro";
-  font-style: italic;
-  src: local("AJensonPro-Italic"), local("AJensonPro-Italic"), url("../assets/fonts/AJensonPro-It.otf") format("truetype"); 
-}
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: TrajanPro;
-    //font-family: Arial;
+    font-family: Arial;
 }
 h6 {
   font-weight: bold;
 }
 .toolbar-content, ion-footer button {
-    font-family: TrajanPro;
-    //font-family: Arial;
+    font-family: Arial;
 }
 
 app-header > ion-navbar > div.toolbar-background {
-    background-image: url("../assets/img/logo2.svg");
+    background-image: url("../assets/img/logo.svg");
     background-repeat: no-repeat;
     background-size: auto 85%;
     background-position: left 5px top 5px;
@@ -62,7 +40,7 @@ app-header > ion-navbar > div.toolbar-background {
 }
 
 ion-header > ion-navbar > div.toolbar-background {
-    background-image: url("../assets/img/logo2.svg");
+    background-image: url("../assets/img/logo.svg");
     background-repeat: no-repeat;
     background-size: auto 85%;
     background-position: left 5px top 5px;

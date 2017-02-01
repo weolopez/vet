@@ -1,44 +1,30 @@
 <ion-header>
-	<app-header>
-		<button *ngIf="!userServices.user.id" ion-button small color="primary" (click)="login()">{{'Login' | translate}}</button>
-		<button *ngIf="userServices.user.id" ion-button small color="primary" (click)="logout()">{{'Logout' | translate}}</button>
-	</app-header>
+	<ion-navbar>
+		<ion-buttons begin>
+			<ion-thumbnail item-left>
+				<img src="assets/img/logo.png" style="width:107px;height:97px;padding:0;">
+			</ion-thumbnail>
+		</ion-buttons>
+
+    <ion-title style="position: absolute;top: 0;left: 75px;">
+		<h3>AT&amp;T Veterans</h3>
+    </ion-title>
+
+		<ion-buttons end>
+			<button ion-button icon-only menuToggle>
+				<ion-icon name="menu"></ion-icon>
+			</button>
+		</ion-buttons>
+	</ion-navbar>
 </ion-header>
 
 <ion-content padding-left padding-right padding-top>
 	<section id="home-body">
-		<div>
-			<ion-segment [(ngModel)]="selectedTab" padding-bottom [hidden]="!(volunteerEventsService.myEvents.length>0)">
-				<ion-segment-button value="home">
-					Home 
-				</ion-segment-button>
-				<ion-segment-button value="events">
-					Events
-				</ion-segment-button>
-				<ion-segment-button value="myevents">
-					My Events
-				</ion-segment-button>
-			</ion-segment>
-			<ion-segment [(ngModel)]="selectedTab" padding-bottom [hidden]="volunteerEventsService.myEvents.length>0">
-				<ion-segment-button value="home">
-					Home
-				</ion-segment-button>
-				<ion-segment-button value="events">
-					Events
-				</ion-segment-button>
-			</ion-segment>
-		</div>
-
-		<div [ngSwitch]="selectedTab">
-			<div *ngSwitchCase="'events'">
-				<events></events>
-			</div>
-			<div *ngSwitchCase="'home'" padding>
-					<home-tab></home-tab>
-			</div>
-			<div *ngSwitchCase="'myevents'">
-				<myevents></myevents>
-			</div>
-		</div>
+		<h1>About AT&T Veterans</h1>
+		<p>
+			AT&T Veterans is an independent organization of AT&T employees and retirees dedicated to serving the veteran/military community.
+			We value and appreciate the sacrifice our military men and women provide for our country each and every day allowing us
+			all a better and safer place to live and grow.
+		</p>
 	</section>
 </ion-content>
