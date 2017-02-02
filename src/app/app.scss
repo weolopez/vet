@@ -31,20 +31,11 @@ h6 {
     font-family: Arial;
 }
 
-app-header > ion-navbar > div.toolbar-background {
-    background-image: url("../assets/img/logo.svg");
-    background-repeat: no-repeat;
-    background-size: auto 85%;
-    background-position: left 5px top 5px;
- //   background-color: white;
+.header-image {
+  width:107px;height:97px;padding:0;
 }
-
-ion-header > ion-navbar > div.toolbar-background {
-    background-image: url("../assets/img/logo.svg");
-    background-repeat: no-repeat;
-    background-size: auto 85%;
-    background-position: left 5px top 5px;
-  //  background-color: white;
+.header-title {
+  padding-left: 75px;
 }
 
 #right-menu > div {
@@ -54,7 +45,7 @@ ion-header > ion-navbar > div.toolbar-background {
   text-align: right;
 }
 
-//CUSTOM CONTENT
+//custom content
 .content-pad{
     max-width: 95%;
     margin: auto;

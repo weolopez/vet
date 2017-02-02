@@ -1,9 +1,21 @@
 <ion-header>
-	<app-header back="true">
-		<button  ion-button small color="primary" (click)="register()">
-			{{'Create New Account' | translate}}
-		</button>
-	</app-header>
+	<ion-navbar hideBackButton="true">
+		<ion-buttons begin>
+			<ion-thumbnail item-left>
+				<img src="assets/img/logo.png" class="header-image">
+			</ion-thumbnail>
+		</ion-buttons>
+
+		<ion-title>
+			<h3 class="header-title">Login</h3>
+		</ion-title>
+
+		<ion-buttons end>
+			<button ion-button icon-only menuToggle>
+				<ion-icon name="menu"></ion-icon>
+			</button>
+		</ion-buttons>
+	</ion-navbar>
 </ion-header>
 <ion-content scroll="true" class="has-subheader">
 
