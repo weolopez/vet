@@ -1,28 +1,31 @@
 <ion-header>
-	<app-header back="true" title="">
-	</app-header>
+	<ion-navbar hideBackButton="true">
+		<ion-buttons begin>
+			<ion-thumbnail item-left>
+				<img src="assets/img/logo.png" class="header-image">
+			</ion-thumbnail>
+		</ion-buttons>
+
+		<ion-title>
+			<h3 class="header-title">About</h3>
+		</ion-title>
+
+		<ion-buttons end>
+			<button ion-button icon-only menuToggle>
+				<ion-icon name="menu"></ion-icon>
+			</button>
+		</ion-buttons>
+	</ion-navbar>
 </ion-header>
 
 <ion-content>
 
-	<!--ion-toolbar secondary>
-		<ion-buttons begin>
-			<button ion-button icon-left (click)="back()">
-       <ion-icon name="ios-arrow-back"></ion-icon>
-        {{'About' | translate}}
-		</button>
-		</ion-buttons>
-	</ion-toolbar-->
 
 	<section id="tab-content" padding>
-		<h1>About AT&T Veterans</h1>
 		<p>
 			AT&T Veterans is an independent organization of AT&T employees and retirees dedicated to serving the veteran/military community.
 			We value and appreciate the sacrifice our military men and women provide for our country each and every day allowing us
 			all a better and safer place to live and grow.
 		</p>
-		<div class="sal-att-logo-container">
-			<img src="assets/img/collaboration.png" />
-		</div>
 	</section>
 </ion-content>

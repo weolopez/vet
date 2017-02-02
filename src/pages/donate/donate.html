@@ -1,11 +1,23 @@
 <ion-header>
-  <ion-navbar hideBackButton="true">
-    <ion-title id="doing">Doing the Most Good</ion-title>
-    <button menuToggle right>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-  </ion-navbar>
+	<ion-navbar hideBackButton="true">
+		<ion-buttons begin>
+			<ion-thumbnail item-left>
+				<img class="header-image" src="assets/img/logo.png">
+			</ion-thumbnail>
+		</ion-buttons>
+
+		<ion-title >
+			<h3 class="header-title">Password Updated</h3>
+		</ion-title>
+
+		<ion-buttons end>
+			<button ion-button icon-only menuToggle>
+					<ion-icon name="menu"></ion-icon>
+				</button>
+		</ion-buttons>
+	</ion-navbar>
 </ion-header>
+
 
 <section id="login-bar" *ngIf="!username">
   <ion-select id="language-select" [(ngModel)]="language">

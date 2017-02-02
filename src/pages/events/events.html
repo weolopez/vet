@@ -1,5 +1,10 @@
 <ion-header>
     <ion-navbar>
+
+    <ion-title style="position: absolute;top: 0;left: 75px;">
+		<h3>Events</h3>
+    </ion-title>
+
         <ion-buttons end>
             <button ion-button icon-only menuToggle>
 				<ion-icon name="menu"></ion-icon>
@@ -12,7 +17,6 @@
 
     <ion-searchbar id="searchbar" (ionInput)="getItems($event)"></ion-searchbar>
     <div id="results" *ngIf="searching">Search Results</div>
-    <img src="assets/img/logo2.jpg" />
     <div *ngIf="searching && noResults">No Results Found</div>
 
     <ion-row responsive-sm wrap>
