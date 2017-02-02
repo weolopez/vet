@@ -1,7 +1,8 @@
 # Specifies files to intentionally ignore when using Git
 # http://git-scm.com/docs/gitignore
 
-/src/lib/
+src/lib/
+www/
 node_modules/
 platforms/
 plugins/
